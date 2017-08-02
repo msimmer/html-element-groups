@@ -3,6 +3,10 @@
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msimmer/html-element-groups.git"
+  },
   "scripts": {
     "build": "./node_modules/.bin/babel index.es --presets es2015,stage-0 | sed \"s/TIMESTAMP/$(date +%s000)/\" > index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
