@@ -12,8 +12,8 @@
   },
   "scripts": {
     "build": "./node_modules/.bin/babel index.es --presets es2015,stage-0 | sed \"s/TIMESTAMP/$(date +%s000)/\" > index.js",
-    "prepublish": "yarn test && yarn build",
-    "preversion": "yarn test && yarn build",
+    "prepublish": "yarn build && yarn test",
+    "preversion": "yarn build && yarn test",
     "test": "mocha"
   },
   "author": "Maxwell Simmer <maxwell.simmer@gmail.com> (http://maxwellsimmer.com)",
