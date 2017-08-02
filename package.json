@@ -3,20 +3,27 @@
   "version": "0.1.3",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "> 6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/msimmer/html-element-groups.git"
   },
   "scripts": {
     "build": "./node_modules/.bin/babel index.es --presets es2015,stage-0 | sed \"s/TIMESTAMP/$(date +%s000)/\" > index.js",
-    "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "yarn test && yarn build",
+    "preversion": "yarn test && yarn build",
+    "test": "mocha"
   },
   "author": "Maxwell Simmer <maxwell.simmer@gmail.com> (http://maxwellsimmer.com)",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0",
+    "should": "^11.2.1"
   }
 }

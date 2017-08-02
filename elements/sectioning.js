@@ -11,7 +11,6 @@
             'h4',
             'h5',
             'h6',
-            'h7',
             'header',
             'hgroup',
             'nav',

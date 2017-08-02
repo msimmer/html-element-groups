@@ -2,6 +2,9 @@
 
 > Lists of HTML elements. Grouped based on logic from [MDN](https://developer.mozilla.org/en/docs/Web/HTML/Element).
 
+[![npm version](https://badge.fury.io/js/html-element-groups.svg)](https://badge.fury.io/js/html-element-groups)
+[![Build Status](https://img.shields.io/travis/msimmer/html-element-groups/master.svg?style=flat)](https://travis-ci.org/msimmer/html-element-groups)
+
 ```js
 const elements = require('html-element-groups')
 
