@@ -1,5 +1,7 @@
 # html-element-groups
 
+> Lists of HTML elements
+
 ```js
 const elements = require('html-element-groups')
 
