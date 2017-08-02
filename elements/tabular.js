@@ -1,0 +1,12 @@
+module.exports = [
+    'caption',
+    'col',
+    'colgroup',
+    'table',
+    'tbody',
+    'td',
+    'tfoot',
+    'th',
+    'thead',
+    'tr',
+]

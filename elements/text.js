@@ -1,0 +1,16 @@
+module.exports = [
+    'blockquote',
+    'dd',
+    'div',
+    'dl',
+    'dt',
+    'figcaption',
+    'figure',
+    'hr',
+    'li',
+    'main',
+    'ol',
+    'p',
+    'pre',
+    'ul',
+]
