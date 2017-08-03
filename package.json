@@ -11,7 +11,9 @@
     "url": "git+https://github.com/msimmer/html-element-groups.git"
   },
   "scripts": {
-    "build": "./node_modules/.bin/babel index.es --presets es2015,stage-0 | sed \"s/TIMESTAMP/$(date +%s000)/\" > index.js",
+    "babel": "./node_modules/.bin/babel index.es --presets es2015,stage-0 | sed \"s/TIMESTAMP/$(date +%s000)/\" > index.js",
+    "inline": "echo $(node ./node_modules/.bin/inline-require ./index.js) > index.js",
+    "build": "yarn babel && yarn inline",
     "prepublish": "yarn build && yarn test",
     "preversion": "yarn build && yarn test",
     "test": "mocha"
@@ -23,6 +25,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.0",
+    "inline-require": "^0.1.1",
     "mocha": "^3.5.0",
     "should": "^11.2.1"
   }
