@@ -4,6 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/html-element-groups.svg)](https://badge.fury.io/js/html-element-groups)
 [![Build Status](https://img.shields.io/travis/msimmer/html-element-groups/master.svg?style=flat)](https://travis-ci.org/msimmer/html-element-groups)
+[![Coverage Status](https://coveralls.io/repos/github/msimmer/html-element-groups/badge.svg)](https://coveralls.io/github/msimmer/html-element-groups)
 
 ```js
 const elements = require('html-element-groups')
